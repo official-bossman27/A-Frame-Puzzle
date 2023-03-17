@@ -9,7 +9,7 @@
 <!--Link to js script-->
 <script src="js/script.js"></script>
 
-<title>Bomba</title>
+<title>puzzle</title>
 
 </head>
 <a-scene background="color: #FAFAFA">
@@ -17,6 +17,12 @@
     <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
     <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
     <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+
+    <a-text id="scoretext" Value="welcome to my game" position="0 2 -3" color="#000000"  ></a-text>
+
+
+    <a-entity oculus-touch-controls="hand left" update-score-text="pp" ></a-entity>
+    <a-entity oculus-touch-controls="hand right" ></a-entity>
 </a-scene>
 
 
